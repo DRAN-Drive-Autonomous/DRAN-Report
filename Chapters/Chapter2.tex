@@ -1,0 +1,52 @@
+\section{Sensors in Autonomous Vehicles}
+With the help of sensors, autonomous vehicles ensure no human interaction is needed while driving. A wide range of sensors are used in autonomous vehicles to build reliable vision. The sensors help the self-driving vehicle to detect hurdles or blockages in the driving environment and to move without causing fatalities.
+\\
+Below are some primary sensors used in autonomous vehicles:
+
+\subsection{Camera}
+Cameras used in autonomous cars are specialized image sensors that detect the visible light spectrum reflected from objects. Cameras are the best sensor solution to give an accurate visual representation of an autonomous vehicle's surroundings. In autonomous vehicles, cameras are fixed on all four sides—front, rear, right, and left—to give a 360° view. These cameras use wide and narrow fields of view to perceive both short-range wide view and long-range arrow view. Super-wide lenses are used in autonomous vehicles for capturing a panoramic view that assists with parking. However, accurate camera visuals fail to give information regarding the distance of objects from autonomous vehicles.
+
+\subsection{LiDAR}
+LiDAR uses laser beams (light waves) to determine the distance between two objects. In autonomous vehicles, LiDAR is mounted on top of vehicles and is rotated at high speed while emitting laser beams. The laser beams reflect from the obstacles and travel back to the device. The time taken for this to happen is used to determine the distance, shape, and depth of the obstacles surrounding the autonomous vehicle.
+\\
+Even though LiDAR can catch the position, shape, size, and depth of an obstacle, they can get glitched by fake echoes showing far objects as near objects and vice versa. LiDAR fails to distinguish between multiple copies of laser signals and shows non-existent obstacles to autonomous vehicles. LiDAR does not function well in rain, snow, or fog. 
+
+\subsection{RADAR}
+The principle of operation for LiDAR and RADAR are the same, but instead of the light waves used in LIDAR, RADAR relies on radio waves. The time taken by the radio waves to return from the obstacles to the device is used for calculating the distance, angle, and velocity of the obstacle in the surroundings of the autonomous vehicle.
+\\
+RADAR in autonomous vehicles operates at the frequencies of 24, 74, 77, and 79 GHz, corresponding to short-range radars (SRR), medium-range radars (MRR), and long-range radars (LRR), respectively. They each have slightly different functions:
+\begin{itemize}
+    \item SRR technology enables blind-spot monitoring, lane-keeping assistance, and parking assistance in autonomous vehicles. 
+    \item MRR sensors are used when obstacle detection is in the range of 100-150 meters with a beam angle varying between 30° to 160°. 
+    \item The automatic distance control and brake assistance are supported by LRR radar sensors. 
+\end{itemize}
+RADAR technology in autonomous vehicles operates with millimeter waves and offers millimeter precision. The utilization of millimeter waves in autonomous vehicular RADAR ensures high resolution in obstacle detection and centimeter accuracy in position and movement determination. Compared to other sensor technologies in autonomous vehicles, RADAR works reliably under low visibility conditions such as cloudy weather, snow, rain, and fog. 
+
+\subsection{Microphone}
+A microphone is a transducer that converts sound into an electrical signal. Microphones are used to give hearing abilities to autonomous vehicles. In autonomous vehicles, microphones can be used to detect horns, emergency sirens, etc.
+\\
+Microphones in autonomous vehicles are also used to identify the condition of road, the vehicle is driving on. It is shown that different types of roads (like wet, sandy, snowy) have different spectrum hence plays an important role in the identification.
+
+\section{Navigation Systems in Autonomous Vehicles}
+Autonomous vehicles can use navigation systems to geolocate with numerical coordinates (e.g. latitude, longitude) representing their physical locations in space. They can also navigate by combining real-time GPS coordinates with other digital map data (e.g. via Google Maps).
+\\
+Geolocation data often varies around a five-meter radius. To compensate for imprecise GPS data, self-driving cars can use unique data-processing techniques like particle filtering to improve location accuracy. Furthermore, these systems can also be used to make efficient judgement for vehicle to take turn.
+\\
+Some geolocation services used nowadays includes  Indian Regional Navigation Satellite System (\textit{IRNSS} or \textit{NavIC}), United States' Global Positioning System (\textit{GPS}), Russia's Global Navigation Satellite System (\textit{GLONASS}), China's \textit{BeiDou} Navigation Satellite System and the European Union's \textit{Galileo}.
+
+\section{Vehicle Control with Deep Learning}
+
+\section{Workflow}
+I designed the following workflow for the project:
+
+\subsection{Forming a problem statement}
+
+\subsection{Creating dataset}
+
+\subsection{Data Preprocessing}
+
+\subsection{Designing Neural Network}
+
+\subsection{Training Neural Network}
+
+\subsection{Simulation in GTA-V}
