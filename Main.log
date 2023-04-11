@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.4.7)  10 APR 2023 20:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.4.7)  11 APR 2023 06:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -488,6 +488,8 @@ Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibsep=\skip84
 LaTeX Info: Redefining \cite on input line 694.
 \c@NAT@ctr=\count340
+) (d:/texlive/2023/texmf-dist/tex/latex/placeins/placeins.sty
+Package: placeins 2005/04/18  v 2.2
 ) (d:/texlive/2023/texmf-dist/tex/latex/tools/array.sty
 Package: array 2022/09/04 v2.5g Tabular extension package (FMi)
 \col@sep=\dimen193
@@ -498,7 +500,7 @@ Package: array 2022/09/04 v2.5g Tabular extension package (FMi)
 \backup@length=\skip86
 \ar@cellbox=\box64
 )
-LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 50.
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 51.
  (d:/texlive/2023/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 ) (d:/texlive/2023/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
@@ -512,24 +514,24 @@ LaTeX Warning: Label `ch:ack' multiply defined.
 )
 \openout1 = `Main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
@@ -563,7 +565,7 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 149.
  (d:/texlive/2023/texmf-dist/tex/latex/graphics/mathcolor.ltx))
-Package hyperref Info: Link coloring ON on input line 50.
+Package hyperref Info: Link coloring ON on input line 51.
  (./Main.out) (./Main.out)
 \@outlinefile=\write3
 \openout3 = `Main.out'.
@@ -596,12 +598,12 @@ LaTeX Font Info:    Trying to load font information for U+lasy on input line 15.
  (d:/texlive/2023/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 ))
-Overfull \hbox (11.70065pt too wide) in paragraph at lines 15--63
+Overfull \hbox (11.70065pt too wide) in paragraph at lines 15--64
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 15--63
+Underfull \hbox (badness 10000) in paragraph at lines 15--64
 
  []
 
@@ -661,59 +663,99 @@ Chapter 3.
  3 Proposed Work
 ------------------------------------------------------------------------------
 (./Chapters/Chapter3.tex
-<Figures//Ch03/0000001.png, id=276, 1928.20375pt x 1085.05376pt>
+<Figures//Ch03/0000001.png, id=286, 1928.20375pt x 1085.05376pt>
 File: Figures//Ch03/0000001.png Graphic file (type png)
 <use Figures//Ch03/0000001.png>
-Package pdftex.def Info: Figures//Ch03/0000001.png  used on input line 11.
+Package pdftex.def Info: Figures//Ch03/0000001.png  used on input line 10.
 (pdftex.def)             Requested size: 289.07999pt x 162.66826pt.
  [6
 
  <./Figures//Ch03/0000001.png (PNG copy)>]
-<Figures//Ch03/final.png, id=281, 256.96pt x 385.44pt>
+<Figures//Ch03/final.png, id=292, 256.96pt x 385.44pt>
 File: Figures//Ch03/final.png Graphic file (type png)
 <use Figures//Ch03/final.png>
-Package pdftex.def Info: Figures//Ch03/final.png  used on input line 43.
+Package pdftex.def Info: Figures//Ch03/final.png  used on input line 39.
 (pdftex.def)             Requested size: 216.81pt x 325.22008pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) [7] [8 <./Figures//Ch03/final.png (PNG copy)>]
+[7]
+<Figures//Ch03/patch_creation.png, id=300, 1054.94125pt x 1172.38pt>
+File: Figures//Ch03/patch_creation.png Graphic file (type png)
+<use Figures//Ch03/patch_creation.png>
+Package pdftex.def Info: Figures//Ch03/patch_creation.png  used on input line 59.
+(pdftex.def)             Requested size: 361.34999pt x 401.5735pt.
+ [8 <./Figures//Ch03/final.png (PNG copy)>]
+<Figures//Ch03/model_decoder.png, id=308, 2679.00874pt x 1447.4075pt>
+File: Figures//Ch03/model_decoder.png Graphic file (type png)
+<use Figures//Ch03/model_decoder.png>
+Package pdftex.def Info: Figures//Ch03/model_decoder.png  used on input line 74.
+(pdftex.def)             Requested size: 361.34999pt x 195.21489pt.
+<Figures//Ch03/representational_layer.png, id=309, 658.46pt x 963.6pt>
+File: Figures//Ch03/representational_layer.png Graphic file (type png)
+<use Figures//Ch03/representational_layer.png>
+Package pdftex.def Info: Figures//Ch03/representational_layer.png  used on input line 80.
+(pdftex.def)             Requested size: 144.54pt x 211.52214pt.
+<Figures//Ch03/classification_layer.png, id=310, 658.46pt x 770.88pt>
+File: Figures//Ch03/classification_layer.png Graphic file (type png)
+<use Figures//Ch03/classification_layer.png>
+Package pdftex.def Info: Figures//Ch03/classification_layer.png  used on input line 86.
+(pdftex.def)             Requested size: 144.54pt x 169.21771pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[9 <./Figures//Ch03/patch_creation.png>] [10 <./Figures//Ch03/model_decoder.png> <./Figures//Ch03/representational_layer.png> <./Figures//Ch03/classification_layer.png>]
+<Figures//Ch03/dran_nn.png, id=324, 1493.58pt x 1252.68pt>
+File: Figures//Ch03/dran_nn.png Graphic file (type png)
+<use Figures//Ch03/dran_nn.png>
+Package pdftex.def Info: Figures//Ch03/dran_nn.png  used on input line 100.
+(pdftex.def)             Requested size: 361.34999pt x 303.05774pt.
+) [11
+
+ <./Figures//Ch03/dran_nn.png>]
 Chapter 4.
 ------------------------------------------------------------------------------
  4 Simulation and Results
 ------------------------------------------------------------------------------
-(./Chapters/Chapter4.tex) [9
+(./Chapters/Chapter4.tex) [12
 
 ]
 Chapter 5.
 ------------------------------------------------------------------------------
  5 Conclusions and Future Work
 ------------------------------------------------------------------------------
-(./Chapters/conclusion.tex) [10
+(./Chapters/conclusion.tex) [13
 
-] (./Main.bbl) [11
+] (./Main.bbl) [14
 
 ] (./Main.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `Main.out' has not changed.
-(rerunfilecheck)             Checksum: B6C7D76A5443B5410026591FCB3714ED;6612.
+(rerunfilecheck)             Checksum: AAD671E3730F753531DD979AA4635A7C;6551.
  ) 
 Here is how much of TeX's memory you used:
- 15947 strings out of 477934
- 255238 string characters out of 5838267
- 1863660 words of memory out of 5000000
- 35768 multiletter control sequences out of 15000+600000
+ 16045 strings out of 477934
+ 257987 string characters out of 5838267
+ 1864660 words of memory out of 5000000
+ 35847 multiletter control sequences out of 15000+600000
  543098 words of font info for 86 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  78i,11n,81p,13148b,623s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <d:/texlive/2023/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><d:/texlive/2023/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb><d:/texlive/2023/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><d:/texlive/2023/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><d:/texlive/2023/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Main.pdf (20 pages, 3272476 bytes).
+Output written on Main.pdf (23 pages, 3650816 bytes).
 PDF statistics:
- 348 PDF objects out of 1000 (max. 8388607)
- 308 compressed objects within 4 object streams
- 69 named destinations out of 1000 (max. 500000)
- 328 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 388 PDF objects out of 1000 (max. 8388607)
+ 335 compressed objects within 4 object streams
+ 79 named destinations out of 1000 (max. 500000)
+ 353 words of extra memory for PDF output out of 10000 (max. 10000000)
 

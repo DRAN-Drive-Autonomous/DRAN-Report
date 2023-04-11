@@ -29,12 +29,12 @@
 \contentsline {subsection}{\numberline {3.2.1}Generating Navigation Map}{7}{subsection.34}%
 \contentsline {subsection}{\numberline {3.2.2}Generating Speed Map}{7}{subsection.35}%
 \contentsline {subsection}{\numberline {3.2.3}Resizing Image}{7}{subsection.36}%
-\contentsline {subsection}{\numberline {3.2.4}Collecting generate images and labels}{7}{subsection.37}%
+\contentsline {subsection}{\numberline {3.2.4}Collecting generate images and labels}{8}{subsection.38}%
 \contentsline {section}{\numberline {3.3}Model Designing}{8}{section.39}%
-\contentsline {subsection}{\numberline {3.3.1}Creating Patches of Images}{8}{subsection.40}%
-\contentsline {subsection}{\numberline {3.3.2}Transformer Encoder}{8}{subsection.41}%
-\contentsline {subsection}{\numberline {3.3.3}Model Decoder}{8}{subsection.42}%
-\contentsline {subsection}{\numberline {3.3.4}Final Model}{8}{subsection.43}%
-\contentsline {chapter}{\numberline {4}Simulation and Results}{9}{chapter.44}%
-\contentsline {chapter}{\numberline {5}Conclusions and Future Work}{10}{chapter.45}%
-\contentsline {chapter}{Bibliography}{10}{dummy.46}%
+\contentsline {subsection}{\numberline {3.3.1}Patch Embedding}{8}{subsection.40}%
+\contentsline {subsection}{\numberline {3.3.2}Transformer Encoder}{9}{subsection.42}%
+\contentsline {subsection}{\numberline {3.3.3}Model Decoder}{9}{subsection.43}%
+\contentsline {subsection}{\numberline {3.3.4}Final Model}{11}{subsection.47}%
+\contentsline {chapter}{\numberline {4}Simulation and Results}{12}{chapter.49}%
+\contentsline {chapter}{\numberline {5}Conclusions and Future Work}{13}{chapter.50}%
+\contentsline {chapter}{Bibliography}{13}{dummy.51}%

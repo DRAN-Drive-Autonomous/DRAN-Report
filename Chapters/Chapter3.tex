@@ -5,13 +5,13 @@ A total of 10016 images and labels are recorded in the code.
 
 \subsection{Image}
 Image of resolution 1920 X 1080 is recorded while manually controlling vehicle in the simulator. Figure 3.1 shows a image recorded image.
-
 \begin{figure}[h]
     \centering
     \includegraphics[width = 4in]{Ch03/0000001.png}
     \caption{Recorded Image}
     \label{figure:1}
 \end{figure}
+\FloatBarrier
 
 \subsection{Labels}
 The dataset comprises of four labels:
@@ -32,25 +32,72 @@ Using a modification in GTA-V, it is possible to have a digital speedometer whic
 
 \subsection{Resizing Image}
 Since the map and speed is extracted from the original image, the region in image containing map and speed is masked to not contail it in the image. The region masked is from (20,839) to (300,1060). Then the image is resized to 256 X 256 to make the image computationally feasible for Neaural Network training. 
-//
+\\
 Figure 3.2 shows the processed images, map, speed.
-
-\subsection{Collecting generate images and labels}
-Then the processed images and map are pushed into a array and all the hence genrated array are pushed into another array to form training images named Xtrain and all the labels are pushed into another array to form training labels named Ytrain. Then the generated Xtrain and Ytrain are saved in .npz files.
-
 \begin{figure}[h]
     \centering
     \includegraphics[width = 3in]{Ch03/final.png}
     \caption{Processed Images}
     \label{figure:2}
 \end{figure}
+\FloatBarrier
+
+\subsection{Collecting generate images and labels}
+Then the processed images and map are pushed into a array and all the hence genrated array are pushed into another array to form training images named Xtrain and all the labels are pushed into another array to form training labels named Ytrain. Then the generated Xtrain and Ytrain are saved in .npz files.
 
 \section{Model Designing}
+With the reference from Vision Transformer\cite{dosovitskiy2021image} and Native Transformer\cite{2017arXiv170603762V} and transformations as per the dataset, I have devised a unique transformer, named DRAN.
+\\
+Below is the description of the DRAN. 
 
-\subsection{Creating Patches of Images}
+\subsection{Patch Embedding}
+As mentioned in the vision transformer, the image before being passed to the transformer encoder needs to be converted into patches and positional embedding needs to be added to the generated patches.
+\\
+For this, with the help of some online blogs, I have devised an algorithm for Patch Embedding as shown in figure 3.3.
+\begin{figure}[h]
+    \centering
+    \includegraphics[width = 5in]{Ch03/patch_creation.png}
+    \caption{Patch Embedding Layer}
+    \label{figure:3}
+\end{figure}
+\FloatBarrier
 
 \subsection{Transformer Encoder}
+Encoder used in this transformer in a stack of 6 small identical units as explained in the original native transformer.
 
 \subsection{Model Decoder}
+There will be two transformer encoders in the final model so after some operations, data from two encoders will be combined and then further operations will be performed for generating output.
+\\
+Figure 3.4, 3.5, 3.6 represents the structure of the decoder.
+\begin{figure}[h]
+    \centering
+    \includegraphics[width = 5in]{Ch03/model_decoder.png}
+    \caption{DRAN Decoder}
+    \label{figure:4}
+\end{figure}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width = 2in]{Ch03/representational_layer.png}
+    \caption{Representational Layer}
+    \label{figure:5}
+\end{figure}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width = 2in]{Ch03/classification_layer.png}
+    \caption{Classification Layer}
+    \label{figure:6}
+\end{figure}
+\FloatBarrier
 
 \subsection{Final Model}
+The main DRAN neural network is made with two input images one of the game camera recording, and other of the map processed in section 3.2.1.
+\\
+There are 4 output labels of the neural network namely, Throttle Value, Throttle Flag, Steering Value, Steering Flag.
+\\
+The final model designed is shown in figure 3.7 below.
+\begin{figure}[h]
+    \centering
+    \includegraphics[width = 5in]{Ch03/dran_nn.png}
+    \caption{DRAN Neural Network}
+    \label{figure:7}
+\end{figure}
