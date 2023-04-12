@@ -35,18 +35,98 @@ Geolocation data often varies around a five-meter radius. To compensate for impr
 Some geolocation services used nowadays includes  Indian Regional Navigation Satellite System (\textit{IRNSS} or \textit{NavIC}), United States' Global Positioning System (\textit{GPS}), Russia's Global Navigation Satellite System (\textit{GLONASS}), China's \textit{BeiDou} Navigation Satellite System and the European Union's \textit{Galileo}.
 
 \section{Vehicle Control with Deep Learning}
+Artificial Intelligence is the major backbone of the autonomous vehicles which enables vehicle to recognize and react to their environment in real time, allowing them to safely navigate. This is called \textbf{Perception}, the ability, while driving, to process and identify road data — from street signs to pedestrians to surrounding traffic.
+\\
+In the earlier stages, Machine Learning was used to enable vehicles to perceive their environment. But as the technology increases, Deep Learning or use of Neural Networks turns out to be the better approach for the classification.
 
-\section{Workflow}
-I designed the following workflow for the project:
+\subsection{Machine Learning vs Deep Learning}
+\subsubsection{Machine Learning}
+Machine Learning is an application of artificial intelligence that includes algorithms that parse data, learn from that data, and then apply what they've learned to make informed decisions.
+\\
+In machine learning, human intervention is needed to extract the features based on input to make the accurate predictions. Furthermore, if an AI algorithm returns an inaccurate prediction, then an engineer has to step in and make adjustments.
 
-\subsection{Forming a problem statement}
+\subsubsection{Deep Learning}
+Deep Learning is subfield of machine learning that structures algorithms in layers to create an “artificial neural network” that can learn and make intelligent decisions on its own.
+\\
+A deep learning model is designed to continually analyze data with a logical structure similar to how a human would draw conclusions. To complete this analysis, deep learning applications use a layered structure of algorithms called an \textbf{Artificial Neural Network}. The design of an artificial neural network is inspired by the biological network of neurons in the human brain, leading to a learning system that's far more capable than that of standard machine learning models
+\\
+\\
+Figure 2.1 shows the distinction between algorithms based on Machine Learning and Deep Learning.
 
-\subsection{Creating dataset}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width = 5in]{Ch02/ml_vs_dl.png}
+    \caption{Difference Between Machine Learning and Deep Learning}
+    \label{figure:9}
+\end{figure}
+\FloatBarrier
 
-\subsection{Data Preprocessing}
+\subsubsection{Machine Learning or Deep Learning for Autonomous Vehicles}
+In case of autonomous vehicles, rather than requiring a manually written set of rules for the car to follow, such as “stop if you see red,” Neural Networks enable vehicles to learn how to navigate the world on their own using sensor data. This makes Deep Learning algorithms optimal as the decision maker for the autonomous vehicle. 
 
-\subsection{Designing Neural Network}
+\subsection{Deep Learning Algorithms}
+In the field of computer vision, over the period of time, several algorithms or neural networks are designed like Convulational Neural Networks, Generative Adversarial Networks, Transformers. With the advancement in technologies, advancement in accuracy of each neural network is done with transformers currently as the algorithms making best predictions.
 
-\subsection{Training Neural Network}
+\subsubsection{Transformer Networks}
+Transformer networks have been proven to achieve better accuracy in a variety of autonomous vehicle perception tasks when compared to convolutional neural networks running on embedded systems.
+\\
+First transformer network (say, native transformer)\cite{2017arXiv170603762V} has 3 major components:
+\begin{enumerate}
+    \item Positional Embeddings
+    \item Transformer Encoder
+    \item Transformer Decoder
+\end{enumerate}
+This network was formed to performe tasks in the field of Natural Language Processing. After further research, a new transformer named \textbf{Vision Transformer}\cite{dosovitskiy2021image} was built to perform tasks related to Computer Vision.
+\\
+In Vision Transformer, the Encoder has remained same but the algorithms for Positional Embeddings and Decoder were changed.
+For autonomous vehicles, since computer vision plays an important role, the model designing is inspired using Vision Transformer
 
-\subsection{Simulation in GTA-V}
+\subsubsection{Positional Embedder in Vision Transformer}
+As shown in the figure 2.2, in positional embedding layer, the image is first split into fixed-size patches, then each patch linearly embedded,
+add finally position embeddings are done, and the resulting sequence of vectors are fed to a standard Transformer encoder.
+\begin{figure}[h]
+    \centering
+    \includegraphics[width = 4in]{Ch02/positional_embedding.png}
+    \caption{Positional Embedding Layer used in Vision Transformer}
+    \label{figure:10}
+\end{figure}
+\FloatBarrier
+
+\subsubsection{Encoder in Vision Transformer}
+The encoder is composed of a stack of N identical layers. Each layer has two sub-layers. The first is a multi-head self-attention mechanism, and the second is a simple, position-wise fully connected feed-forward network. A residual connection is employed around each of the two sub-layers, followed by Layer Normalization\cite{ba2016layer}.
+\\
+Figure 2.3 shows the encoder used in Vision Transformer.
+\begin{figure}[h]
+    \centering
+    \includegraphics[width = 2in]{Ch02/transformer_encoder.png}
+    \caption{Encoder used in Vision Transformer}
+    \label{figure:11}
+\end{figure}
+\FloatBarrier
+
+\subsubsection{Multi-Head Attention in Transformers}
+Multi-head Attention is a module for attention mechanisms which runs through an attention mechanism several times in parallel. The independent attention outputs are then concatenated and linearly transformed into the expected dimension. Intuitively, multiple attention heads allows for attending to parts of the sequence differently (e.g. longer-term dependencies versus shorter-term dependencies).
+\[ MultiHead(Q, K, V) = [head_1,...,head_h]W_o \]
+\[ where \; head_i = Attention(QW_i^Q, KW_i^K, VW_i^V) \]
+In the above eqaution, W is the learning prameter and Attention is a mathematical function from Scaled Dot-Product Attention which is a single attention layer or a head in multi-head attention layer.
+\\
+Scaled dot-product attention is an attention mechanism where the dot products are scaled down by \(\sqrt{d_k}\). Formally we have a query \(Q\), a key \(K\) and a value \(V\) and calculate the attention as:
+\[ Attention(Q,K,V) = softmax\left(\frac{QK^T}{\sqrt{d_k}}\right)V \]
+With the help of Multi-Head Attention in Encoder, each position in the encoder can attend to all positions in the previous layer of the encoder. This played a mojor role in making Transformers more efficient and thus formed a backbone for the Transformers.
+
+\subsubsection{Multi-Layer Perceptron in Transformers}
+Multi layer perceptron (MLP) is a supplement of feed forward neural network. It consists of three types of layers—the input layer, output layer and hidden layer. The input layer receives the input signal to be processed. The required task such as prediction and classification is performed by the output layer. An arbitrary number of hidden layers that are placed in between the input and output layer are the true computational engine of the MLP. Similar to a feed forward network in a MLP the data flows in the forward direction from input to output layer.
+\\
+The Multi-layer perceptron used in vision transformer contains GELU non-linearity\cite{hendrycks2020gaussian}. Since the encoder block repeats, we have to be careful about the number of units in the hidden layer because the output dimension has to be compatible with the input for the next MultiHeadAttention layer.
+
+\subsubsection{Decoder in Vision Transformer}
+Decoder as per the paper is a normal classifier in which the tensor passed from the encoder are passed first through a Multi-Layer Perceptron and then with the help of softmax activation, classification was done.
+\\
+Figure 2.4 describes the classifier used as decoder in the transformer.
+\begin{figure}[h]
+    \centering
+    \includegraphics[width = 4in]{Ch02/transformer_decoder.png}
+    \caption{Decoder used in Vision Transformer}
+    \label{figure:12}
+\end{figure}
+\FloatBarrier

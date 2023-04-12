@@ -1,3 +1,32 @@
+\section{Workflow}
+I designed the following workflow for the project:
+
+\subsection{Formulation of problem statement}
+The problem statement as I described will be to form a autonomous vehicle. This will include creation of dataset, neural network training, and testing that neural network in the simulator (GTA-V).
+
+\subsection{Creating dataset}
+Due to the shortage to dataset, dataset needs to be created while manually controlling the vehicle in the simulator.
+
+\subsection{Data Preprocessing}
+Some data preprocessing is needed to be convert the dataset into neural network training ready data.
+
+\subsection{Designing Neural Network}
+A neural network needs to be designed which will be inspired from the Transformer Neural Networks.
+
+\subsection{Training Neural Network}
+Using the created dataset and designed model, the neural network needs to be trined and tested from the dataset.
+
+\subsection{Simulation in GTA-V}
+Once the neural network with training reaches efficient accuracy, with the help of the neural network, the vehicle needs to be driven autonomously in the simulator.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width = 6in]{Ch03/workflow.png}
+    \caption{Project Workflow}
+    \label{figure:1}
+\end{figure}
+\FloatBarrier
+
 \section{Dataset}
 Since there is shortage of dataset, I have created a program to generate a dataset while a user plays the game. The data recorded consists of an image and 4 required labels.
 //
@@ -9,7 +38,7 @@ Image of resolution 1920 X 1080 is recorded while manually controlling vehicle i
     \centering
     \includegraphics[width = 4in]{Ch03/0000001.png}
     \caption{Recorded Image}
-    \label{figure:1}
+    \label{figure:2}
 \end{figure}
 \FloatBarrier
 
@@ -38,7 +67,7 @@ Figure 3.2 shows the processed images, map, speed.
     \centering
     \includegraphics[width = 3in]{Ch03/final.png}
     \caption{Processed Images}
-    \label{figure:2}
+    \label{figure:3}
 \end{figure}
 \FloatBarrier
 
@@ -58,7 +87,7 @@ For this, with the help of some online blogs, I have devised an algorithm for Pa
     \centering
     \includegraphics[width = 5in]{Ch03/patch_creation.png}
     \caption{Patch Embedding Layer}
-    \label{figure:3}
+    \label{figure:4}
 \end{figure}
 \FloatBarrier
 
@@ -73,19 +102,19 @@ Figure 3.4, 3.5, 3.6 represents the structure of the decoder.
     \centering
     \includegraphics[width = 5in]{Ch03/model_decoder.png}
     \caption{DRAN Decoder}
-    \label{figure:4}
+    \label{figure:5}
 \end{figure}
 \begin{figure}[h]
     \centering
     \includegraphics[width = 2in]{Ch03/representational_layer.png}
     \caption{Representational Layer}
-    \label{figure:5}
+    \label{figure:6}
 \end{figure}
 \begin{figure}[h]
     \centering
     \includegraphics[width = 2in]{Ch03/classification_layer.png}
     \caption{Classification Layer}
-    \label{figure:6}
+    \label{figure:7}
 \end{figure}
 \FloatBarrier
 
@@ -99,5 +128,5 @@ The final model designed is shown in figure 3.7 below.
     \centering
     \includegraphics[width = 5in]{Ch03/dran_nn.png}
     \caption{DRAN Neural Network}
-    \label{figure:7}
+    \label{figure:8}
 \end{figure}

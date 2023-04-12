@@ -1,40 +1,47 @@
 \babel@toc {english}{}\relax 
 \contentsline {chapter}{List of Figures}{viii}{dummy.4}%
-\contentsline {chapter}{List of Tables}{ix}{dummy.6}%
-\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.8}%
-\contentsline {section}{\numberline {1.1}The Area of Work}{1}{section.9}%
-\contentsline {section}{\numberline {1.2}Problem Addressed}{1}{section.10}%
-\contentsline {section}{\numberline {1.3}Existing System}{2}{section.11}%
-\contentsline {subsection}{\numberline {1.3.1}System 1}{2}{subsection.12}%
-\contentsline {chapter}{\numberline {2}Literature Review}{3}{chapter.13}%
-\contentsline {section}{\numberline {2.1}Sensors in Autonomous Vehicles}{3}{section.14}%
-\contentsline {subsection}{\numberline {2.1.1}Camera}{3}{subsection.15}%
-\contentsline {subsection}{\numberline {2.1.2}LiDAR}{3}{subsection.16}%
-\contentsline {subsection}{\numberline {2.1.3}RADAR}{4}{subsection.17}%
-\contentsline {subsection}{\numberline {2.1.4}Microphone}{4}{subsection.18}%
-\contentsline {section}{\numberline {2.2}Navigation Systems in Autonomous Vehicles}{4}{section.19}%
-\contentsline {section}{\numberline {2.3}Vehicle Control with Deep Learning}{5}{section.20}%
-\contentsline {section}{\numberline {2.4}Workflow}{5}{section.21}%
-\contentsline {subsection}{\numberline {2.4.1}Forming a problem statement}{5}{subsection.22}%
-\contentsline {subsection}{\numberline {2.4.2}Creating dataset}{5}{subsection.23}%
-\contentsline {subsection}{\numberline {2.4.3}Data Preprocessing}{5}{subsection.24}%
-\contentsline {subsection}{\numberline {2.4.4}Designing Neural Network}{5}{subsection.25}%
-\contentsline {subsection}{\numberline {2.4.5}Training Neural Network}{5}{subsection.26}%
-\contentsline {subsection}{\numberline {2.4.6}Simulation in GTA-V}{5}{subsection.27}%
-\contentsline {chapter}{\numberline {3}Proposed Work}{6}{chapter.28}%
-\contentsline {section}{\numberline {3.1}Dataset}{6}{section.29}%
-\contentsline {subsection}{\numberline {3.1.1}Image}{6}{subsection.30}%
-\contentsline {subsection}{\numberline {3.1.2}Labels}{6}{subsection.32}%
-\contentsline {section}{\numberline {3.2}Data Preprocessing}{7}{section.33}%
-\contentsline {subsection}{\numberline {3.2.1}Generating Navigation Map}{7}{subsection.34}%
-\contentsline {subsection}{\numberline {3.2.2}Generating Speed Map}{7}{subsection.35}%
-\contentsline {subsection}{\numberline {3.2.3}Resizing Image}{7}{subsection.36}%
-\contentsline {subsection}{\numberline {3.2.4}Collecting generate images and labels}{8}{subsection.38}%
-\contentsline {section}{\numberline {3.3}Model Designing}{8}{section.39}%
-\contentsline {subsection}{\numberline {3.3.1}Patch Embedding}{8}{subsection.40}%
-\contentsline {subsection}{\numberline {3.3.2}Transformer Encoder}{9}{subsection.42}%
-\contentsline {subsection}{\numberline {3.3.3}Model Decoder}{9}{subsection.43}%
-\contentsline {subsection}{\numberline {3.3.4}Final Model}{11}{subsection.47}%
-\contentsline {chapter}{\numberline {4}Simulation and Results}{12}{chapter.49}%
-\contentsline {chapter}{\numberline {5}Conclusions and Future Work}{13}{chapter.50}%
-\contentsline {chapter}{Bibliography}{13}{dummy.51}%
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.6}%
+\contentsline {section}{\numberline {1.1}The Area of Work}{1}{section.7}%
+\contentsline {section}{\numberline {1.2}Problem Addressed}{1}{section.8}%
+\contentsline {section}{\numberline {1.3}Existing System}{2}{section.9}%
+\contentsline {chapter}{\numberline {2}Literature Review}{3}{chapter.10}%
+\contentsline {section}{\numberline {2.1}Sensors in Autonomous Vehicles}{3}{section.11}%
+\contentsline {subsection}{\numberline {2.1.1}Camera}{3}{subsection.12}%
+\contentsline {subsection}{\numberline {2.1.2}LiDAR}{3}{subsection.13}%
+\contentsline {subsection}{\numberline {2.1.3}RADAR}{4}{subsection.14}%
+\contentsline {subsection}{\numberline {2.1.4}Microphone}{4}{subsection.15}%
+\contentsline {section}{\numberline {2.2}Navigation Systems in Autonomous Vehicles}{4}{section.16}%
+\contentsline {section}{\numberline {2.3}Vehicle Control with Deep Learning}{5}{section.17}%
+\contentsline {subsection}{\numberline {2.3.1}Machine Learning vs Deep Learning}{5}{subsection.18}%
+\contentsline {subsubsection}{\numberline {2.3.1.1}Machine Learning}{5}{subsubsection.19}%
+\contentsline {subsubsection}{\numberline {2.3.1.2}Deep Learning}{5}{subsubsection.20}%
+\contentsline {subsubsection}{\numberline {2.3.1.3}Machine Learning or Deep Learning for Autonomous Vehicles}{6}{subsubsection.22}%
+\contentsline {subsection}{\numberline {2.3.2}Deep Learning Algorithms}{6}{subsection.23}%
+\contentsline {subsubsection}{\numberline {2.3.2.1}Transformer Networks}{6}{subsubsection.24}%
+\contentsline {subsubsection}{\numberline {2.3.2.2}Positional Embedder in Vision Transformer}{7}{subsubsection.28}%
+\contentsline {subsubsection}{\numberline {2.3.2.3}Encoder in Vision Transformer}{7}{subsubsection.30}%
+\contentsline {subsubsection}{\numberline {2.3.2.4}Multi-Head Attention in Transformers}{8}{subsubsection.32}%
+\contentsline {subsubsection}{\numberline {2.3.2.5}Multi-Layer Perceptron in Transformers}{9}{subsubsection.33}%
+\contentsline {subsubsection}{\numberline {2.3.2.6}Decoder in Vision Transformer}{9}{subsubsection.34}%
+\contentsline {chapter}{\numberline {3}Proposed Work}{10}{chapter.36}%
+\contentsline {section}{\numberline {3.1}Workflow}{10}{section.37}%
+\contentsline {subsection}{\numberline {3.1.1}Formulation of problem statement}{10}{subsection.38}%
+\contentsline {subsection}{\numberline {3.1.2}Creating dataset}{10}{subsection.39}%
+\contentsline {subsection}{\numberline {3.1.3}Data Preprocessing}{10}{subsection.40}%
+\contentsline {subsection}{\numberline {3.1.4}Designing Neural Network}{10}{subsection.41}%
+\contentsline {subsection}{\numberline {3.1.5}Training Neural Network}{11}{subsection.42}%
+\contentsline {subsection}{\numberline {3.1.6}Simulation in GTA-V}{11}{subsection.43}%
+\contentsline {section}{\numberline {3.2}Dataset}{11}{section.45}%
+\contentsline {subsection}{\numberline {3.2.1}Image}{11}{subsection.46}%
+\contentsline {subsection}{\numberline {3.2.2}Labels}{12}{subsection.48}%
+\contentsline {section}{\numberline {3.3}Data Preprocessing}{12}{section.49}%
+\contentsline {subsection}{\numberline {3.3.1}Generating Navigation Map}{12}{subsection.50}%
+\contentsline {subsection}{\numberline {3.3.2}Generating Speed Map}{12}{subsection.51}%
+\contentsline {subsection}{\numberline {3.3.3}Resizing Image}{12}{subsection.52}%
+\contentsline {subsection}{\numberline {3.3.4}Collecting generate images and labels}{13}{subsection.54}%
+\contentsline {section}{\numberline {3.4}Model Designing}{13}{section.55}%
+\contentsline {subsection}{\numberline {3.4.1}Patch Embedding}{13}{subsection.56}%
+\contentsline {subsection}{\numberline {3.4.2}Transformer Encoder}{14}{subsection.58}%
+\contentsline {subsection}{\numberline {3.4.3}Model Decoder}{14}{subsection.59}%
+\contentsline {subsection}{\numberline {3.4.4}Final Model}{16}{subsection.63}%
+\contentsline {chapter}{Bibliography}{16}{dummy.65}%

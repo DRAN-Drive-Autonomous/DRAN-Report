@@ -1,13 +1,16 @@
 \babel@toc {english}{}\relax 
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Difference Between Machine Learning and Deep Learning\relax }}{6}{figure.caption.21}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Positional Embedding Layer used in Vision Transformer\relax }}{7}{figure.caption.29}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Encoder used in Vision Transformer\relax }}{8}{figure.caption.31}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Decoder used in Vision Transformer\relax }}{9}{figure.caption.35}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Recorded Image\relax }}{6}{figure.caption.31}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Processed Images\relax }}{8}{figure.caption.37}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Patch Embedding Layer\relax }}{9}{figure.caption.41}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces DRAN Decoder\relax }}{10}{figure.caption.44}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Representational Layer\relax }}{10}{figure.caption.45}%
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Classification Layer\relax }}{10}{figure.caption.46}%
-\contentsline {figure}{\numberline {3.7}{\ignorespaces DRAN Neural Network\relax }}{11}{figure.caption.48}%
-\addvspace {10\p@ }
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Project Workflow\relax }}{11}{figure.caption.44}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Recorded Image\relax }}{11}{figure.caption.47}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Processed Images\relax }}{13}{figure.caption.53}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Patch Embedding Layer\relax }}{14}{figure.caption.57}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces DRAN Decoder\relax }}{15}{figure.caption.60}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Representational Layer\relax }}{15}{figure.caption.61}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Classification Layer\relax }}{15}{figure.caption.62}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces DRAN Neural Network\relax }}{16}{figure.caption.64}%

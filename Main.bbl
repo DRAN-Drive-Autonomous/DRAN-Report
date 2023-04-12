@@ -3,10 +3,16 @@
 \bibitem{J3016_202104}
 O.-R. A. D.~O. Committee, {\em Taxonomy and Definitions for Terms Related to Driving Automation Systems for On-Road Motor Vehicles}, apr 2021.
 
+\bibitem{2017arXiv170603762V}
+A.~{Vaswani}, N.~{Shazeer}, N.~{Parmar}, J.~{Uszkoreit}, L.~{Jones}, A.~N. {Gomez}, L.~{Kaiser}, and I.~{Polosukhin}, ``{Attention Is All You Need},'' {\em arXiv e-prints}, p.~arXiv:1706.03762, June 2017.
+
 \bibitem{dosovitskiy2021image}
 A.~Dosovitskiy, L.~Beyer, A.~Kolesnikov, D.~Weissenborn, X.~Zhai, T.~Unterthiner, M.~Dehghani, M.~Minderer, G.~Heigold, S.~Gelly, J.~Uszkoreit, and N.~Houlsby, ``An image is worth 16x16 words: Transformers for image recognition at scale,'' 2021.
 
-\bibitem{2017arXiv170603762V}
-A.~{Vaswani}, N.~{Shazeer}, N.~{Parmar}, J.~{Uszkoreit}, L.~{Jones}, A.~N. {Gomez}, L.~{Kaiser}, and I.~{Polosukhin}, ``{Attention Is All You Need},'' {\em arXiv e-prints}, p.~arXiv:1706.03762, June 2017.
+\bibitem{ba2016layer}
+J.~L. Ba, J.~R. Kiros, and G.~E. Hinton, ``Layer normalization,'' 2016.
+
+\bibitem{hendrycks2020gaussian}
+D.~Hendrycks and K.~Gimpel, ``Gaussian error linear units (gelus),'' 2020.
 
 \end{thebibliography}
