@@ -11,37 +11,52 @@
 \contentsline {subsection}{\numberline {2.1.3}RADAR}{4}{subsection.14}%
 \contentsline {subsection}{\numberline {2.1.4}Microphone}{4}{subsection.15}%
 \contentsline {section}{\numberline {2.2}Navigation Systems in Autonomous Vehicles}{4}{section.16}%
-\contentsline {section}{\numberline {2.3}Vehicle Control with Deep Learning}{5}{section.17}%
-\contentsline {subsection}{\numberline {2.3.1}Machine Learning vs Deep Learning}{5}{subsection.18}%
-\contentsline {subsubsection}{\numberline {2.3.1.1}Machine Learning}{5}{subsubsection.19}%
-\contentsline {subsubsection}{\numberline {2.3.1.2}Deep Learning}{5}{subsubsection.20}%
-\contentsline {subsubsection}{\numberline {2.3.1.3}Machine Learning or Deep Learning for Autonomous Vehicles}{6}{subsubsection.22}%
-\contentsline {subsection}{\numberline {2.3.2}Deep Learning Algorithms}{6}{subsection.23}%
-\contentsline {subsubsection}{\numberline {2.3.2.1}Transformer Networks}{6}{subsubsection.24}%
-\contentsline {subsubsection}{\numberline {2.3.2.2}Positional Embedder in Vision Transformer}{7}{subsubsection.28}%
-\contentsline {subsubsection}{\numberline {2.3.2.3}Encoder in Vision Transformer}{7}{subsubsection.30}%
-\contentsline {subsubsection}{\numberline {2.3.2.4}Multi-Head Attention in Transformers}{8}{subsubsection.32}%
-\contentsline {subsubsection}{\numberline {2.3.2.5}Multi-Layer Perceptron in Transformers}{9}{subsubsection.33}%
-\contentsline {subsubsection}{\numberline {2.3.2.6}Decoder in Vision Transformer}{9}{subsubsection.34}%
-\contentsline {chapter}{\numberline {3}Proposed Work}{10}{chapter.36}%
-\contentsline {section}{\numberline {3.1}Workflow}{10}{section.37}%
-\contentsline {subsection}{\numberline {3.1.1}Formulation of problem statement}{10}{subsection.38}%
-\contentsline {subsection}{\numberline {3.1.2}Creating dataset}{10}{subsection.39}%
-\contentsline {subsection}{\numberline {3.1.3}Data Preprocessing}{10}{subsection.40}%
-\contentsline {subsection}{\numberline {3.1.4}Designing Neural Network}{10}{subsection.41}%
-\contentsline {subsection}{\numberline {3.1.5}Training Neural Network}{11}{subsection.42}%
-\contentsline {subsection}{\numberline {3.1.6}Simulation in GTA-V}{11}{subsection.43}%
-\contentsline {section}{\numberline {3.2}Dataset}{11}{section.45}%
-\contentsline {subsection}{\numberline {3.2.1}Image}{11}{subsection.46}%
-\contentsline {subsection}{\numberline {3.2.2}Labels}{12}{subsection.48}%
-\contentsline {section}{\numberline {3.3}Data Preprocessing}{12}{section.49}%
-\contentsline {subsection}{\numberline {3.3.1}Generating Navigation Map}{12}{subsection.50}%
-\contentsline {subsection}{\numberline {3.3.2}Generating Speed Map}{12}{subsection.51}%
-\contentsline {subsection}{\numberline {3.3.3}Resizing Image}{12}{subsection.52}%
-\contentsline {subsection}{\numberline {3.3.4}Collecting generate images and labels}{13}{subsection.54}%
-\contentsline {section}{\numberline {3.4}Model Designing}{13}{section.55}%
-\contentsline {subsection}{\numberline {3.4.1}Patch Embedding}{13}{subsection.56}%
-\contentsline {subsection}{\numberline {3.4.2}Transformer Encoder}{14}{subsection.58}%
-\contentsline {subsection}{\numberline {3.4.3}Model Decoder}{14}{subsection.59}%
-\contentsline {subsection}{\numberline {3.4.4}Final Model}{16}{subsection.63}%
-\contentsline {chapter}{Bibliography}{16}{dummy.65}%
+\contentsline {section}{\numberline {2.3}Cruise Control in Vehicles}{5}{section.17}%
+\contentsline {subsection}{\numberline {2.3.1}PID Controller}{5}{subsection.18}%
+\contentsline {subsection}{\numberline {2.3.2}Math in PID Controller}{6}{subsection.20}%
+\contentsline {section}{\numberline {2.4}Vehicle Control with Deep Learning}{7}{section.21}%
+\contentsline {subsection}{\numberline {2.4.1}Machine Learning vs Deep Learning}{7}{subsection.22}%
+\contentsline {subsubsection}{\numberline {2.4.1.1}Machine Learning}{7}{subsubsection.23}%
+\contentsline {subsubsection}{\numberline {2.4.1.2}Deep Learning}{7}{subsubsection.24}%
+\contentsline {subsubsection}{\numberline {2.4.1.3}Machine Learning or Deep Learning for Autonomous Vehicles}{8}{subsubsection.26}%
+\contentsline {subsection}{\numberline {2.4.2}Deep Learning Algorithms}{8}{subsection.27}%
+\contentsline {subsubsection}{\numberline {2.4.2.1}Transformer Networks}{8}{subsubsection.28}%
+\contentsline {subsubsection}{\numberline {2.4.2.2}Positional Embedder in Vision Transformer}{9}{subsubsection.32}%
+\contentsline {subsubsection}{\numberline {2.4.2.3}Encoder in Vision Transformer}{9}{subsubsection.34}%
+\contentsline {subsubsection}{\numberline {2.4.2.4}Multi-Head Attention in Transformers}{10}{subsubsection.36}%
+\contentsline {subsubsection}{\numberline {2.4.2.5}Multi-Layer Perceptron in Transformers}{11}{subsubsection.37}%
+\contentsline {subsubsection}{\numberline {2.4.2.6}Decoder in Vision Transformer}{11}{subsubsection.38}%
+\contentsline {chapter}{\numberline {3}Proposed Work}{12}{chapter.40}%
+\contentsline {section}{\numberline {3.1}Workflow}{12}{section.41}%
+\contentsline {subsection}{\numberline {3.1.1}Formulation of problem statement}{12}{subsection.42}%
+\contentsline {subsection}{\numberline {3.1.2}Creating dataset}{12}{subsection.43}%
+\contentsline {subsection}{\numberline {3.1.3}Data Preprocessing}{12}{subsection.44}%
+\contentsline {subsection}{\numberline {3.1.4}Designing Neural Network}{12}{subsection.45}%
+\contentsline {subsection}{\numberline {3.1.5}Training Neural Network}{13}{subsection.46}%
+\contentsline {subsection}{\numberline {3.1.6}Simulation in GTA-V}{13}{subsection.47}%
+\contentsline {section}{\numberline {3.2}Dataset}{13}{section.49}%
+\contentsline {subsection}{\numberline {3.2.1}Image}{13}{subsection.50}%
+\contentsline {subsection}{\numberline {3.2.2}Labels}{14}{subsection.52}%
+\contentsline {section}{\numberline {3.3}Data Preprocessing}{14}{section.53}%
+\contentsline {subsection}{\numberline {3.3.1}Generating Navigation Map}{14}{subsection.54}%
+\contentsline {subsection}{\numberline {3.3.2}Generating Speed Map}{14}{subsection.55}%
+\contentsline {subsection}{\numberline {3.3.3}Resizing Image}{14}{subsection.56}%
+\contentsline {subsection}{\numberline {3.3.4}Data Analysis}{15}{subsection.58}%
+\contentsline {subsection}{\numberline {3.3.5}Data Augmentation}{16}{subsection.60}%
+\contentsline {subsection}{\numberline {3.3.6}Collecting generate images and labels}{17}{subsection.62}%
+\contentsline {section}{\numberline {3.4}Model Designing}{17}{section.63}%
+\contentsline {subsection}{\numberline {3.4.1}Patch Embedding}{18}{subsection.64}%
+\contentsline {subsection}{\numberline {3.4.2}Transformer Encoder}{18}{subsection.66}%
+\contentsline {subsection}{\numberline {3.4.3}Model Decoder}{19}{subsection.67}%
+\contentsline {subsection}{\numberline {3.4.4}Final Model}{20}{subsection.71}%
+\contentsline {section}{\numberline {3.5}Model Preparation}{21}{section.73}%
+\contentsline {subsection}{\numberline {3.5.1}Model Building}{21}{subsection.74}%
+\contentsline {subsection}{\numberline {3.5.2}Model Compiling}{21}{subsection.75}%
+\contentsline {subsection}{\numberline {3.5.3}Model Callbacks}{21}{subsection.76}%
+\contentsline {subsection}{\numberline {3.5.4}Dataset Configuration}{21}{subsection.77}%
+\contentsline {chapter}{\numberline {4}Simulation and Results}{22}{chapter.78}%
+\contentsline {section}{\numberline {4.1}Final Result}{22}{section.79}%
+\contentsline {section}{\numberline {4.2}Other Important Links}{23}{section.80}%
+\contentsline {chapter}{\numberline {5}Conclusions and Future Work}{24}{chapter.81}%
+\contentsline {section}{\numberline {5.1}Scope of Future Work}{24}{section.82}%
+\contentsline {chapter}{Bibliography}{24}{dummy.83}%

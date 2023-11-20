@@ -1,16 +1,21 @@
 \babel@toc {english}{}\relax 
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Difference Between Machine Learning and Deep Learning\relax }}{6}{figure.caption.21}%
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Positional Embedding Layer used in Vision Transformer\relax }}{7}{figure.caption.29}%
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Encoder used in Vision Transformer\relax }}{8}{figure.caption.31}%
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Decoder used in Vision Transformer\relax }}{9}{figure.caption.35}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Difference between P, PI, and PID\relax }}{6}{figure.caption.19}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Difference Between Machine Learning and Deep Learning\relax }}{8}{figure.caption.25}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Positional Embedding Layer used in Vision Transformer\relax }}{9}{figure.caption.33}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Encoder used in Vision Transformer\relax }}{10}{figure.caption.35}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Decoder used in Vision Transformer\relax }}{11}{figure.caption.39}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Project Workflow\relax }}{11}{figure.caption.44}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Recorded Image\relax }}{11}{figure.caption.47}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Processed Images\relax }}{13}{figure.caption.53}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Patch Embedding Layer\relax }}{14}{figure.caption.57}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces DRAN Decoder\relax }}{15}{figure.caption.60}%
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Representational Layer\relax }}{15}{figure.caption.61}%
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Classification Layer\relax }}{15}{figure.caption.62}%
-\contentsline {figure}{\numberline {3.8}{\ignorespaces DRAN Neural Network\relax }}{16}{figure.caption.64}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Project Workflow\relax }}{13}{figure.caption.48}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Recorded Image\relax }}{13}{figure.caption.51}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Processed Images\relax }}{15}{figure.caption.57}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Bar Graph of the Dataset Generated\relax }}{16}{figure.caption.59}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Bar Graph of the Augmented Dataset\relax }}{17}{figure.caption.61}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Patch Embedding Layer\relax }}{18}{figure.caption.65}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces DRAN Decoder\relax }}{19}{figure.caption.68}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Representational Layer\relax }}{19}{figure.caption.69}%
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Classification Layer\relax }}{20}{figure.caption.70}%
+\contentsline {figure}{\numberline {3.10}{\ignorespaces DRAN Neural Network\relax }}{20}{figure.caption.72}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }

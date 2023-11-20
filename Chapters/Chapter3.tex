@@ -71,8 +71,57 @@ Figure 3.2 shows the processed images, map, speed.
 \end{figure}
 \FloatBarrier
 
+\subsection{Data Analysis}
+Since the data has been generated recently, it has to be analysed to confirm that all attributes are in balanced. The dataset comprises of three throttle and steering values combining them forms 9 different types of labels. The following are the unique labels:
+\begin{itemize}
+    \item $0.0$\_$0.0$
+    \item $0.0$\_$0.5$
+    \item $0.0$\_$1.0$
+    \item $0.5$\_$0.0$
+    \item $0.5$\_$0.5$
+    \item $0.5$\_$1.0$
+    \item $1.0$\_$0.0$
+    \item $1.0$\_$0.5$
+    \item $1.0$\_$1.0$
+\end{itemize}
+The total number of data of each attributed has to be calculated to validate that the dataset is balanced. Figure 3.4 shows that the data is unbalanced.
+\begin{figure}[h]
+    \centering
+    \includegraphics[width = 5in]{Ch03/unbalanced_data.png}
+    \caption{Bar Graph of the Dataset Generated}
+    \label{figure:4}
+\end{figure}
+\FloatBarrier
+
+\subsection{Data Augmentation}
+Since the data was found unbalanced, the following augmentation techniques are applied to increase the data of each labels:
+\begin{itemize}
+    \item Increasing/Decreasing Brightness
+    \item Increasing/Decreasing Contrast
+    \item Horizontal Rotation of Image
+    \item Horizontal Rotation of Radar
+    \item Blurring
+    \item Noising
+    \item Bootstrapping
+\end{itemize}
+Figure 3.5 shows the data after applying these techniques.
+\begin{figure}[h]
+    \centering
+    \includegraphics[width = 5in]{Ch03/balanced_data.png}
+    \caption{Bar Graph of the Augmented Dataset}
+    \label{figure:5}
+\end{figure}
+\FloatBarrier
+
 \subsection{Collecting generate images and labels}
-Then the processed images and map are pushed into a array and all the hence genrated array are pushed into another array to form training images named Xtrain and all the labels are pushed into another array to form training labels named Ytrain. Then the generated Xtrain and Ytrain are saved in .npz files.
+Then the processed images, radar and labels are pushed in an array to be saved as .npz file with images and radar saved as X and labels saved as y. A total of four such datasets are formed for training and fine-tuning. Datasets comprised of 10K, 20K, 30K, and 40K data each. The shape of:
+\begin{itemize}
+    \item X is [n, 2]
+    \item y is [n, 4]
+    \item First index of tranpose of X is (n, 256, 256, 3)
+    \item Second index of tranpose of X is (n, 128, 128, 3)
+\end{itemize}
+where, n is the number of data in the dataset.
 
 \section{Model Designing}
 With the reference from Vision Transformer\cite{dosovitskiy2021image} and Native Transformer\cite{2017arXiv170603762V} and transformations as per the dataset, I have devised a unique transformer, named DRAN.
@@ -87,7 +136,7 @@ For this, with the help of some online blogs, I have devised an algorithm for Pa
     \centering
     \includegraphics[width = 5in]{Ch03/patch_creation.png}
     \caption{Patch Embedding Layer}
-    \label{figure:4}
+    \label{figure:6}
 \end{figure}
 \FloatBarrier
 
@@ -102,19 +151,19 @@ Figure 3.4, 3.5, 3.6 represents the structure of the decoder.
     \centering
     \includegraphics[width = 5in]{Ch03/model_decoder.png}
     \caption{DRAN Decoder}
-    \label{figure:5}
+    \label{figure:7}
 \end{figure}
 \begin{figure}[h]
     \centering
     \includegraphics[width = 2in]{Ch03/representational_layer.png}
     \caption{Representational Layer}
-    \label{figure:6}
+    \label{figure:8}
 \end{figure}
 \begin{figure}[h]
     \centering
     \includegraphics[width = 2in]{Ch03/classification_layer.png}
     \caption{Classification Layer}
-    \label{figure:7}
+    \label{figure:9}
 \end{figure}
 \FloatBarrier
 
@@ -128,5 +177,39 @@ The final model designed is shown in figure 3.7 below.
     \centering
     \includegraphics[width = 5in]{Ch03/dran_nn.png}
     \caption{DRAN Neural Network}
-    \label{figure:8}
+    \label{figure:10}
 \end{figure}
+
+\section{Model Preparation}
+Using the above model design, a model has to be built and compiled. The model will be built in TensorFlow 2 using Keras API.
+
+\subsection{Model Building}
+The model is build considering the following hyperparameters:
+\begin{itemize}
+    \item Number of Encoder Layers = 6
+    \item Number of Heads in Multi-Head Attention Layer = 4
+    \item Number of Patches = 64
+\end{itemize}
+Using the following hyperparameters, the model was build and saves as dranNN.h5
+
+\subsection{Model Compiling}
+Before training, the model has to be compiled. The following specifications were used to compile the model:
+\begin{itemize}
+    \item Losses :  Binary Crossentropy
+    \item Optimizers: Adam
+    \item Metrics:
+    \begin{itemize}
+        \item Accuracy
+        \item Mean Squared Error
+      \end{itemize}
+\end{itemize}
+
+\subsection{Model Callbacks}
+To assure proper training and visualization of trained model, the following callbacks are used:
+\begin{itemize}
+    \item Model Checkpoint
+    \item Tensorboard
+\end{itemize}
+
+\subsection{Dataset Configuration}
+To train the model for the first time, dataset with 10K data will be used and the datset will be splitted between train and validate in a ration of 4:1.

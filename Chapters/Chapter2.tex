@@ -34,6 +34,47 @@ Geolocation data often varies around a five-meter radius. To compensate for impr
 \\
 Some geolocation services used nowadays includes  Indian Regional Navigation Satellite System (\textit{IRNSS} or \textit{NavIC}), United States' Global Positioning System (\textit{GPS}), Russia's Global Navigation Satellite System (\textit{GLONASS}), China's \textit{BeiDou} Navigation Satellite System and the European Union's \textit{Galileo}.
 
+\section{Cruise Control in Vehicles}
+With the help of modern systems, cruise control became an important part in the modern-day vehicles. It is a technique to maintain the speed of the car without the need of the driver to push the throttle. Cruise Control helped in enhancing the vehicle's stability and fuel efficiency. The Proportional-Integral-Derivative Controller or PID Controller is a widely adopted approach for cruise control due to its simplicity and effectiveness.
+
+\subsection{PID Controller}
+A PID controller is a widely used feedback control system in engineering. It maintains a desired output by continuously adjusting an input based on three components:
+\begin{itemize}
+    \item \textbf{Proportional}: Directly proportional to the error between the desired and actual values, providing an immediate response to deviations.
+    \item \textbf{Integral}: Accumulates past errors over time, addressing prolonged deviations and eliminating steady-state errors.
+    \item \textbf{Derivative}: Predicts future errors by considering the rate of change, dampening rapid changes and improving stability.
+\end{itemize}
+By combining these components, a PID controller ensures a balance between responsiveness and stability, making it versatile for applications such as process control, automation, and notably, in systems like cruise control for vehicles.
+\\
+The figure below describes the graph of how PID works and is better than P alone or PI. Assume y-axis as speed of vehicle and x-axis as time.
+\begin{figure}[h]
+    \centering
+    \includegraphics[width = 5in]{Ch02/PIDGraph.png}
+    \caption{Difference between P, PI, and PID}
+    \label{figure:1}
+\end{figure}
+\FloatBarrier
+
+\subsection{Math in PID Controller}
+Initially,
+\[ PreviousError = 0 \]
+\[ Integral = 0 \]
+\[ TargetSpeed = SpeedAtWhichCarShouldMoveInCruiseControl \]
+\[ Delta = TimeBetweenEachIteration \]
+\[ K_p, K_i, K_d = Hyperparameters \]
+
+In each iteration,
+\[ CurrentSpeed = SpeedAtWhichCarIsMoving \]
+\[ CurrentError = TargetSpeed - CurrentSpeed \]
+\[ P = K_p * CurrentError \]
+\[ Integral = Integral + CurrentError * Delta \]
+\[ I = K_i * Integral \]
+\[ RateOfChangeOfCurrentError = CurrentError - PreviousError \]
+\[ PreviousError = CurrentError \]
+\[ D = K_d * RateOfChangeOfCurrentError \]
+\[ ControlSignal = P + I + D \]
+Control Signal is the value of throttle in each iteration, where negative means braking.
+
 \section{Vehicle Control with Deep Learning}
 Artificial Intelligence is the major backbone of the autonomous vehicles which enables vehicle to recognize and react to their environment in real time, allowing them to safely navigate. This is called \textbf{Perception}, the ability, while driving, to process and identify road data — from street signs to pedestrians to surrounding traffic.
 \\
@@ -57,7 +98,7 @@ Figure 2.1 shows the distinction between algorithms based on Machine Learning an
     \centering
     \includegraphics[width = 5in]{Ch02/ml_vs_dl.png}
     \caption{Difference Between Machine Learning and Deep Learning}
-    \label{figure:9}
+    \label{figure:2}
 \end{figure}
 \FloatBarrier
 
@@ -88,7 +129,7 @@ add finally position embeddings are done, and the resulting sequence of vectors 
     \centering
     \includegraphics[width = 4in]{Ch02/positional_embedding.png}
     \caption{Positional Embedding Layer used in Vision Transformer}
-    \label{figure:10}
+    \label{figure:3}
 \end{figure}
 \FloatBarrier
 
@@ -100,7 +141,7 @@ Figure 2.3 shows the encoder used in Vision Transformer.
     \centering
     \includegraphics[width = 2in]{Ch02/transformer_encoder.png}
     \caption{Encoder used in Vision Transformer}
-    \label{figure:11}
+    \label{figure:4}
 \end{figure}
 \FloatBarrier
 
@@ -127,6 +168,6 @@ Figure 2.4 describes the classifier used as decoder in the transformer.
     \centering
     \includegraphics[width = 4in]{Ch02/transformer_decoder.png}
     \caption{Decoder used in Vision Transformer}
-    \label{figure:12}
+    \label{figure:5}
 \end{figure}
 \FloatBarrier

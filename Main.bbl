@@ -3,6 +3,18 @@
 \bibitem{J3016_202104}
 O.-R. A. D.~O. Committee, {\em Taxonomy and Definitions for Terms Related to Driving Automation Systems for On-Road Motor Vehicles}, apr 2021.
 
+\bibitem{fujimoto2019benchmarking}
+S.~Fujimoto, E.~Conti, M.~Ghavamzadeh, and J.~Pineau, ``Benchmarking batch deep reinforcement learning algorithms,'' 2019.
+
+\bibitem{yang2017midinet}
+L.-C. Yang, S.-Y. Chou, and Y.-H. Yang, ``Midinet: A convolutional generative adversarial network for symbolic-domain music generation,'' 2017.
+
+\bibitem{8478136}
+L.~Yang, Y.~Zheng, X.~Cai, H.~Dai, D.~Mu, L.~Guo, and T.~Dai, ``A lstm based model for personalized context-aware citation recommendation,'' {\em IEEE Access}, vol.~6, pp.~59618--59627, 2018.
+
+\bibitem{8540720}
+T.-A. Teban, R.-E. Precup, E.-C. Lunca, A.~Albu, C.-A. Bojan-Dragos, and E.~M. Petriu, ``Recurrent neural network models for myoelectricbased control of a prosthetic hand,'' in {\em 2018 22nd International Conference on System Theory, Control and Computing (ICSTCC)}, pp.~603--608, 2018.
+
 \bibitem{2017arXiv170603762V}
 A.~{Vaswani}, N.~{Shazeer}, N.~{Parmar}, J.~{Uszkoreit}, L.~{Jones}, A.~N. {Gomez}, L.~{Kaiser}, and I.~{Polosukhin}, ``{Attention Is All You Need},'' {\em arXiv e-prints}, p.~arXiv:1706.03762, June 2017.
 
